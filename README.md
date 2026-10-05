@@ -1,5 +1,9 @@
 # 🧀 Cheese Rush
 
+<p align="center">
+  <img src="CheeseRush_ScreenShot/CheeseRush.jpg" alt="Cheese Rush Cover Art" width="100%">
+</p>
+
 [![Unity](https://img.shields.io/badge/Unity-6.3%20LTS-black?style=flat&logo=unity)](https://unity.com/)
 [![Platform](https://img.shields.io/badge/Platform-WebGL-blue)](https://play.unity.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -11,6 +15,8 @@ A fast-paced 3D endless runner game built with **Unity 6**. Guide a little mouse
 ---
 
 ## 📸 Screenshots
+
+*In-game screenshots:*
 
 | Main Menu | Gameplay | Obstacle |
 | :---: | :---: | :---: |
@@ -119,6 +125,7 @@ Assets/
 
 - The environment structure and the skybox setup were created by following my instructor's guidance.
 - Character and animations from Mixamo; environment and skybox assets from the Unity Asset Store.
+- Cover art: AI-generated.
 
 ## 📜 License
 
