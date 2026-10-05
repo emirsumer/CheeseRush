@@ -14,7 +14,7 @@ A fast-paced 3D endless runner game built with **Unity 6**. Guide a little mouse
 
 | Main Menu | Gameplay | Obstacle |
 | :---: | :---: | :---: |
-| ![Main Menu](screenshots/CheeseRush_MainMenu.png) | ![Gameplay](screenshots/CheeseRush_GameScreen.png) | ![Obstacle](screenshots/CheeseRush_Obstacle.png) |
+| ![Main Menu](CheeseRush_ScreenShot/CheeseRush_MainMenu.png) | ![Gameplay](CheeseRush_ScreenShot/CheeseRush_GameScreen.png) | ![Obstacle](CheeseRush_ScreenShot/CheeseRush_Obstacle.png) |
 
 ---
 
@@ -40,7 +40,7 @@ The water surface uses a custom shader built with Unity's **Shader Graph**, with
 
 | Vertex Stage | Fragment Stage |
 | :---: | :---: |
-| ![Shader Vertex](screenshots/CheeseRush_Shader_2.png) | ![Shader Fragment](screenshots/CheeseRush_Shader_1.png) |
+| ![Shader Vertex](CheeseRush_ScreenShot/CheeseRush_Shader_2.png) | ![Shader Fragment](CheeseRush_ScreenShot/CheeseRush_Shader_1.png) |
 
 ---
 
