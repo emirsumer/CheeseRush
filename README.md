@@ -20,12 +20,14 @@ A fast-paced 3D endless runner game built with **Unity 6**. Guide a little mouse
 
 ## ✨ Features
 
-- **State-Driven Character Mechanics:** Character behavior is controlled with Animator triggers and Rigidbody physics.
-- **Dynamic Terrain Recycling:** Terrain segments are reused instead of constantly instantiated, which reduces memory load and keeps gameplay smooth.
-- **Collectibles & Obstacles:** Collect cheese to raise your score and avoid wooden obstacles along the track.
-- **Health Indicator:** Remaining health is shown on screen during the run.
+- **State-Driven Character Mechanics:** Character behavior (run, jump, hit, knockback, death) is controlled with Animator triggers and Rigidbody physics.
+- **Dynamic Terrain Recycling:** Ground segments are moved ahead of the player and reused instead of being created endlessly, which keeps memory usage low.
+- **Randomized Spawning:** Each ground piece randomly spawns cheese, an obstacle or nothing, in a random lane.
+- **Progressive Difficulty:** Run speed increases every 15 seconds up to a maximum.
+- **Health System:** The mouse has 3 lives. Hitting an obstacle causes knockback and costs one life; losing all of them triggers a death animation and restarts the level.
+- **Collectibles:** Collect cheese to raise your score, shown live on the HUD.
 - **Custom Water Shader (Shader Graph):** Animated wave effect for the water surface, built visually with node graphs (no code).
-- **Audio System:** Sound effects and music handled through a central AudioManager.
+- **Audio System:** Menu and game music, jump, cheese, obstacle and footstep sounds handled through a central AudioManager.
 - **WebGL Build:** Playable directly in the browser via Unity Play.
 
 ---
@@ -48,8 +50,24 @@ The water surface uses a custom shader built with Unity's **Shader Graph**, with
 
 | Action | Key / Input |
 | ------ | ----------- |
-| **Move Left / Right** | `A` / `D` or `Left` / `Right` Arrow Keys |
+| **Start the run** | `T` |
+| **Move Left / Right** | `A` / `D` |
 | **Jump** | `Spacebar` |
+
+---
+
+## 🧩 Scripts
+
+| Script | Purpose |
+| ------ | ------- |
+| `MouseyScript` | Player movement, jumping, lane changes, health, knockback, death and speed increase |
+| `GroundSpawn` / `GroundPiece` | Ground recycling and random cheese / obstacle placement |
+| `RunnerManager` | Creates the initial ground pieces at the start of the level |
+| `Obstacle` | Detects collisions with the player |
+| `CheeseScript` | Rotating collectible, score update and pickup sound |
+| `UIManager` | Cheese counter, health bar and start info text |
+| `AudioManager` | Music and sound effects |
+| `MainMenu` | Main menu camera movement and game start |
 
 ---
 
@@ -93,7 +111,7 @@ Assets/
    git clone https://github.com/emirsumer/CheeseRush.git
 ```
 2. **Open with Unity:** Add the folder in Unity Hub and use Unity 6000.3.2f1 (or a compatible Unity 6 version).
-3. **Run the Game:** Open `Assets/Development/Scenes/S_MainMenu.unity` and press **Play**.
+3. **Run the Game:** Open `Assets/Development/Scenes/S_MainMenu.unity`, press **Play**, then press `T` to start running.
 
 ---
 
